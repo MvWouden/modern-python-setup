@@ -1,0 +1,9 @@
+exclude =
+    .git
+    .mypy_cache
+    .pytest_cache
+    venv
+    build
+    dist
+ignore = E501, W503, E226
+max-line-length = 79
