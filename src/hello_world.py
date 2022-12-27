@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 def get_hello_world(
     print_string: bool = False, raise_exception: bool = False
 ) -> str:

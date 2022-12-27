@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from pytest import LogCaptureFixture, raises
 
 from src.hello_world import get_hello_world
