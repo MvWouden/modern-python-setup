@@ -1,3 +1,6 @@
+"""This is a simple example of a Python file with function definitions."""
+
+
 def get_hello_world(
     print_string: bool = False, raise_exception: bool = False
 ) -> str:
