@@ -80,6 +80,18 @@ Validate the structure of `pyproject.toml`:
 poetry check
 ```
 
+Export the dependencies to a `requirements.txt` file:
+
+```shell
+poetry export --without dev -f requirements.txt --output requirements.txt
+```
+
+Export the dev-dependencies to a `requirements-dev.txt` file:
+
+```shell
+poetry export --with dev -f requirements.txt -o dev-requirements.txt
+```
+
 ### Pre-commit
 
 Run all pre-commit hooks:

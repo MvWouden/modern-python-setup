@@ -24,4 +24,4 @@ COPY tests tests
 ENV ENV dev
 ENV APP_ENV $ENV
 
-CMD ["poetry", "run", "pytest"]
+CMD ["poetry", "run", "pytest", "--cov-report", "term-missing", "--cov=src", "--typeguard-packages=src"]
