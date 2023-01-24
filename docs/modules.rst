@@ -1,5 +1,5 @@
-src
-===
+hello_world
+===========
 
 .. toctree::
    :maxdepth: 4
