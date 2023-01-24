@@ -111,7 +111,7 @@ pre-commit run -a
 Build the modules:
 
 ```shell
-poetry run sphinx-apidoc -f -o docs src
+poetry run sphinx-apidoc -f -o docs src/<package_name>
 ```
 
 Build the documentation files:
