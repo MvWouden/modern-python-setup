@@ -94,8 +94,35 @@ poetry export --with dev -f requirements.txt -o dev-requirements.txt
 
 ### Pre-commit
 
+Install pre-commit hooks:
+
+```shell
+pre-commit install
+```
+
 Run all pre-commit hooks:
 
 ```shell
 pre-commit run -a
+```
+
+### Sphinx
+
+Build the modules:
+
+```shell
+poetry run sphinx-apidoc -f -o docs src
+```
+
+Build the documentation files:
+
+```shell
+poetry run make -C docs html
+# documentation can now be found at docs/_build/html/index.html
+```
+
+Clean the documentation files:
+
+```shell
+poetry run make -C docs clean
 ```

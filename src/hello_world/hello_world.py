@@ -29,7 +29,7 @@ def get_hello_world(
     Exception
         If raise_exception is True, an exception is raised.
 
-    Notes:
+    Notes
     ------
     See https://numpydoc.readthedocs.io/en/latest/example.html
     for more information on NumPy style docstrings.
