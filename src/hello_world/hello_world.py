@@ -1,10 +1,10 @@
-"""This is a simple example of a Python file with function definitions."""
+"""A simple example of a Python file with function definitions."""
 
 
 def get_hello_world(
     print_string: bool = False, raise_exception: bool = False
 ) -> str:
-    """Returns a string with the text "Hello World!."
+    """Return a string with the text "Hello World!".
 
     This is a more extensive description of the function.
     This function returns a simple string.
@@ -12,10 +12,10 @@ def get_hello_world(
 
     Parameters
     ----------
-    print_string : bool, optional
+    print_string : bool
         If True, the string is printed to the console.
         Otherwise, the string is not printed to the console.
-    raise_exception : bool, optional
+    raise_exception : bool
         If True, an exception is raised.
         Otherwise, no exception is raised.
 
@@ -30,7 +30,7 @@ def get_hello_world(
         If raise_exception is True, an exception is raised.
 
     Notes
-    ------
+    -----
     See https://numpydoc.readthedocs.io/en/latest/example.html
     for more information on NumPy style docstrings.
 
