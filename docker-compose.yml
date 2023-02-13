@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  app:
+  hello_world_app:
     build:
         context: .
-    container_name: app
+    container_name: hello_world_app
