@@ -27,7 +27,7 @@ docker compose down
 Running a command in the container:
 
 ```shell
-docker compose run app <command>
+docker compose run hello_world_app <command>
 ```
 
 ### Poetry
