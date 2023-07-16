@@ -38,9 +38,9 @@ RUN groupadd --gid $USER_GID $USERNAME; \
 USER $USERNAME
 
 WORKDIR /app
-COPY --chown=non-priviliged-user:non-priviliged-user src src
+COPY --chown=non-priviliged-user:non-priviliged-user hello_world hello_world
 
 ENV ENV prod
 ENV APP_ENV $ENV
 
-CMD ["python", "src/hello_world/hello_world.py"]
+CMD ["python", "hello_world/hello_world.py"]

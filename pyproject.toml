@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "A modern python project setup."
 authors = ["Milan van Wouden <milanvanwouden@live.nl>"]
 readme = "README.md"
-packages = [{include = "src"}]
+packages = [{include = "hello_world"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -42,7 +42,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 python_version = 3.11
-packages = ["src"]
+packages = ["hello_world"]
 check_untyped_defs = true
 disallow_untyped_defs = true
 disallow_any_unimported = true
