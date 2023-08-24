@@ -19,5 +19,5 @@ updates:
     labels:
       - "poetry"
       - "dependencies"
-    open-pull-request-limit: 10
+    open-pull-requests-limit: 10
     target-branch: "main"
