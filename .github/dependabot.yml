@@ -9,3 +9,15 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    assignees:
+      - "MvWouden"
+    reviewers:
+      - "MvWouden"
+    commit-message:
+      prefix: "[poetry]"
+      include: "scope"
+    labels:
+      - "poetry"
+      - "dependencies"
+    open-pull-request-limit: 10
+    target-branch: "main"
