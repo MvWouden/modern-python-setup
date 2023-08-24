@@ -621,13 +621,13 @@ flake8-plugin-utils = ">=1.0,<2.0"
 
 [[package]]
 name = "flake8-simplify"
-version = "0.19.3"
+version = "0.20.0"
 description = "flake8 plugin which checks for code that can be simplified"
 optional = false
 python-versions = ">=3.6.1"
 files = [
-    {file = "flake8_simplify-0.19.3-py3-none-any.whl", hash = "sha256:1057320e9312d75849541fee822900d27bcad05b2405edc84713affee635629e"},
-    {file = "flake8_simplify-0.19.3.tar.gz", hash = "sha256:2fb083bf5142a98d9c9554755cf2f56f8926eb4a33eae30c0809041b1546879e"},
+    {file = "flake8_simplify-0.20.0-py3-none-any.whl", hash = "sha256:599a47824726c93fadcf0274e569daed45052e38cd906360d9080eaa3bd76d61"},
+    {file = "flake8_simplify-0.20.0.tar.gz", hash = "sha256:7b8796bbea8aed45f56621c389d0556cc86f0afa5d992581139451240a8fbeca"},
 ]
 
 [package.dependencies]
@@ -1470,18 +1470,21 @@ files = [
 
 [[package]]
 name = "typeguard"
-version = "2.13.3"
+version = "4.1.2"
 description = "Run-time type checker for Python"
 optional = false
-python-versions = ">=3.5.3"
+python-versions = ">=3.7.4"
 files = [
-    {file = "typeguard-2.13.3-py3-none-any.whl", hash = "sha256:5e3e3be01e887e7eafae5af63d1f36c849aaa94e3a0112097312aabfa16284f1"},
-    {file = "typeguard-2.13.3.tar.gz", hash = "sha256:00edaa8da3a133674796cf5ea87d9f4b4c367d77476e185e80251cc13dfbb8c4"},
+    {file = "typeguard-4.1.2-py3-none-any.whl", hash = "sha256:e00775920d4c91e93a0db0ed473ecda9cfaca578aed3ce0ed3ba7f3cc38eab9c"},
+    {file = "typeguard-4.1.2.tar.gz", hash = "sha256:3be187945f9ef5a9f6d7a926dfe54babb7dfd807085ce05f9a5e8735f2487990"},
 ]
 
+[package.dependencies]
+typing-extensions = {version = ">=4.7.0", markers = "python_version < \"3.12\""}
+
 [package.extras]
-doc = ["sphinx-autodoc-typehints (>=1.2.0)", "sphinx-rtd-theme"]
-test = ["mypy", "pytest", "typing-extensions"]
+doc = ["Sphinx (<7)", "packaging", "sphinx-autodoc-typehints (>=1.2.0)", "sphinx-rtd-theme"]
+test = ["mypy (>=1.2.0)", "pytest (>=7)"]
 
 [[package]]
 name = "typing-extensions"
