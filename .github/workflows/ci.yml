@@ -41,7 +41,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: python-build-cache
-          key: ${{ runner.os }}-python-build-cache-${{ hashFiles('**/go.sum') }}
+          key: ${{ runner.os }}-python-build-cache-${{ hashFiles('**/python.sum') }}
       - name: Inject python-build-cache into Docker
         uses: overmindtech/buildkit-cache-dance/inject@main
         with:
