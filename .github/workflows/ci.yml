@@ -41,6 +41,8 @@ jobs:
           tags: localbuild/testimage:latest
           push: false
           load: true
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
       - name: Scan docker image
         uses: anchore/scan-action@v3
         with:
