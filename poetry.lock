@@ -1136,13 +1136,13 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "pyupgrade"
-version = "3.10.1"
+version = "3.11.1"
 description = "A tool to automatically upgrade syntax for newer versions."
 optional = false
 python-versions = ">=3.8.1"
 files = [
-    {file = "pyupgrade-3.10.1-py2.py3-none-any.whl", hash = "sha256:f565b4d26daa46ed522e98746834e77e444269103f8bc04413d77dad95169a24"},
-    {file = "pyupgrade-3.10.1.tar.gz", hash = "sha256:1d8d138c2ccdd3c42b1419230ae036d5607dc69465a26feacc069642fc8d1b90"},
+    {file = "pyupgrade-3.11.1-py2.py3-none-any.whl", hash = "sha256:6e9dd362394b3068123e06ca268de5845d41e2bb29f387b38323cc1009fb3100"},
+    {file = "pyupgrade-3.11.1.tar.gz", hash = "sha256:3e6c7689d2f3ae418c6a60ee981477fe9130eccaed3e33dac6c21274cf7d45f4"},
 ]
 
 [package.dependencies]
@@ -1560,4 +1560,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "7ff7e998f71ad591b7ec5e58c32a274f3b63a8f0e3f78c8df87807ad89780bb0"
+content-hash = "beb183afddf33ffba38b351642fd443f073a7f4f690d7362674e27e1277be98f"
