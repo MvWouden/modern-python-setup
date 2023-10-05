@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "modern-python-setup"
+name = "MPSTITLE"
 version = "0.1.0"
-description = "A modern python project setup."
+description = "MPSDESC"
 authors = ["Milan van Wouden <milanvanwouden@live.nl>"]
 readme = "README.md"
-packages = [{include = "hello_world"}]
+packages = [{include = "MPSSRC"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -42,7 +42,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.mypy]
 python_version = 3.11
-packages = ["hello_world"]
+packages = ["MPSSRC"]
 check_untyped_defs = true
 disallow_untyped_defs = true
 disallow_any_unimported = true

@@ -1,13 +1,13 @@
-hello\_world package
+MPSSRC package
 ====================
 
 Submodules
 ----------
 
-hello\_world.hello\_world module
+MPSSRC.hello\_world module
 --------------------------------
 
-.. automodule:: hello_world.hello_world
+.. automodule:: MPSSRC.hello_world
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ hello\_world.hello\_world module
 Module contents
 ---------------
 
-.. automodule:: hello_world
+.. automodule:: MPSSRC
    :members:
    :undoc-members:
    :show-inheritance:
