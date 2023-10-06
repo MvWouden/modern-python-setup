@@ -61,7 +61,11 @@ grep -lr --exclude-dir={.git,venv,.venv,.mypy_cache,.pytest_cache,__pycache__,.i
 echo "- Replacing project description string in project files"
 grep -lr --exclude-dir={.git,venv,.venv,.mypy_cache,.pytest_cache,__pycache__,.idea,docs} --exclude=init.sh $BP_SRCDESC . | xargs sed -i "s/$BP_SRCDESC/$SRCDESC/g"
 
-# TODO: add docs fix
+echo "- Fixing documentation configuration"
+rm -f docs/modules.rst
+rm -f "docs/$BP_SRCDIR.rst"
+sed -i "s/$BP_SRCTITLE/$SRCTITLE/g" docs/index.rst
+sed -i "s/$BP_SRCTITLE/$SRCTITLE/g" docs/conf.py
 
 # TODO: uncomment script shred
 # shred -u $0
