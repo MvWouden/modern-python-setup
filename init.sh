@@ -67,5 +67,6 @@ rm -f "docs/$BP_SRCDIR.rst"
 sed -i "s/$BP_SRCTITLE/$SRCTITLE/g" docs/index.rst
 sed -i "s/$BP_SRCTITLE/$SRCTITLE/g" docs/conf.py
 
-# TODO: uncomment script shred
-# shred -u $0
+printf "\nMission completed, auto-destroying script... BOOM!\n"
+shred -u "$0"
+exit
