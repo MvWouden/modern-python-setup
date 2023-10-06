@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# TODO: (mid) add validation of parameters (retry loop)
+# TODO: (late) poetry install with sync and sphinx docs generation if poetry is installed
+
 echo "Hi there!"
 printf "We will be going through some steps to rename the template boilerplate.\n\n"
 
@@ -30,8 +33,6 @@ SRCDIR_ESC=${SRCDIR_ESC//"_"/"\\_"}
 
 echo -n "Project description: "
 read -r SRCDESC
-
-# TODO: add validation of parameters
 
 printf "\nJust to confirm, is the following correct?\n"
 echo "- Title: $SRCTITLE"
