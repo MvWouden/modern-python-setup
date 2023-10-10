@@ -8,6 +8,7 @@ exclude =
     dist
     tests
     venv
+    .venv
 ignore = E501, W503, E226, D100, D104
 max-line-length = 79
 docstring_style=numpy

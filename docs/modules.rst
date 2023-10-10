@@ -1,7 +1,7 @@
-hello_world
+MPSSRC
 ===========
 
 .. toctree::
    :maxdepth: 4
 
-   hello_world
+   MPSSRC
