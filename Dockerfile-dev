@@ -10,18 +10,20 @@ ENV PATH $POETRY_HOME/bin:$PATH
 
 WORKDIR /app
 
+COPY MPSSRC MPSSRC
+COPY tests tests
+RUN touch README.md  # requirement for some tools
+
 # Install dependencies into a virtual environment
 # hadolint global ignore=SC1091
 COPY pyproject.toml poetry.lock ./
 RUN python3 -m venv --copies /app/venv; \
     source venv/bin/activate; \
-    poetry install --no-root --no-interaction --with dev
+    poetry install --no-interaction --with dev
 ENV PATH /app/venv/bin:$PATH
 
-COPY MPSSRC src
-COPY tests tests
 
 ENV ENV dev
 ENV APP_ENV $ENV
 
-CMD ["poetry", "run", "pytest", "--cov-report", "term-missing", "--cov=src", "--typeguard-packages=src"]
+CMD ["poetry", "run", "pytest", "--cov-report", "term-missing", "--cov=MPSSRC", "--typeguard-packages=MPSSRC"]
