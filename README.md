@@ -53,7 +53,7 @@ poetry update  # <package1_name> <package2_name>
 Add a dependency:
 
 ```shell
-poetry add MPSSRC  # --group dev
+poetry add <package>  # --group dev
 ```
 
 Remove a dependency:
