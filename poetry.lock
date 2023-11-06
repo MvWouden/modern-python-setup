@@ -552,12 +552,13 @@ flake8 = ">=3.8.4"
 
 [[package]]
 name = "flake8-isort"
-version = "6.1.0"
-description = "flake8 plugin that integrates isort ."
+version = "6.1.1"
+description = "flake8 plugin that integrates isort"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "flake8-isort-6.1.0.tar.gz", hash = "sha256:d4639343bac540194c59fb1618ac2c285b3e27609f353bef6f50904d40c1643e"},
+    {file = "flake8_isort-6.1.1-py3-none-any.whl", hash = "sha256:0fec4dc3a15aefbdbe4012e51d5531a2eb5fa8b981cdfbc882296a59b54ede12"},
+    {file = "flake8_isort-6.1.1.tar.gz", hash = "sha256:c1f82f3cf06a80c13e1d09bfae460e9666255d5c780b859f19f8318d420370b3"},
 ]
 
 [package.dependencies]
@@ -1559,4 +1560,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "9f8973f559e685ea145f6da5178f21db7f0853af6bacc772a3e1b108c93d5425"
+content-hash = "4ba225c35b2526c7928c9bdc66fcf04ad3fe81cc11df1faf3be22469cae2d5e9"
