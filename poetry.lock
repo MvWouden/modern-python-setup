@@ -585,17 +585,20 @@ files = [
 
 [[package]]
 name = "flake8-requirements"
-version = "2.0.1"
+version = "2.1.0"
 description = "Package requirements checker, plugin for flake8"
 optional = false
 python-versions = "*"
 files = [
-    {file = "flake8_requirements-2.0.1-py3-none-any.whl", hash = "sha256:6dee6a5b5cc77687eda39e545344d4c697bd9025c1197e370039058e7d8dd24b"},
+    {file = "flake8_requirements-2.1.0-py3-none-any.whl", hash = "sha256:a437e55c936542943bd532130772575f95690df1f57ad85191cec007d78a2f96"},
 ]
 
 [package.dependencies]
 flake8 = ">=4.0.0"
 setuptools = ">=10.0.0"
+
+[package.extras]
+pyproject = ["Flake8-pyproject"]
 
 [[package]]
 name = "flake8-return"
@@ -1563,4 +1566,4 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f70783bbc78daa7d629cc68e0be3962eab0c7e7d489c06c8bdef19e474226a23"
+content-hash = "7a10b526528f5193cb9b2b33122312323e96721a2c65ec1770cc97fa723ac3bf"
